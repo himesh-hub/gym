@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fdfefe;
+}
+
+.container{
+    max-width: 80vw;
+}
+
+nav div{
+    font-size: 2.3rem;
+}
+
+.navbar{
+    display: flex;
+    height: 67px;
+}
+
+.navbar li{
+    list-style: none;
+    margin: 0px 12px;
+}
+
+.top-left{
+    /* height: 50vh; */
+    width: 50%;
+}
+
+.top-right{
+    /* height: 50vh; */
+    width: 50%;
+}
+
+.section1{
+    min-height: 90vh;
+}
+
+.img-top-right{
+    height: 50vh;
+    width: 100%;
+    object-fit: contain;
+}
+
+.btn{
+    padding: 4px 12px;
+    border-radius: 12px;
+    border: 2px solid #87ceeb;
+    cursor: pointer;
+    color: #002b58;
+    background-color: skyblue;
+}
+
+.dumbellimg{
+    width: 129px;
+    /* padding: 0px 12px; */
+    align-self: center;
+}
+
+.section2{
+    padding-left: 63px;
+    padding-right: 63px;
+}
+
+.section2 p{
+    padding: 0 8vw;
+}
+
+.section2 h1{
+    font-size: 2rem;
+    padding: 10px 0;
+}
+
+.boxes{
+    padding: 30px 0 50px 0;
+}
+
+.box{
+    padding: 12px 0;
+    margin: 12px 22px;
+    min-width: 20vw;
+    border: 2px solid black;
+}
+
+.box ul{
+    list-style: none;
+}
+
+.box ul li{
+    margin: 12px 2px;
+}
+
+.highlight{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* .section3{
+    width: 100%;
+} */
+
+.section3 table{
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+}
+
+.container2{
+    margin: 0 150px;
+}
+
+.section3 th{
+    padding: 10px 0;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+}
+
+.section3 td{
+    margin: 20px;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+}
+
+.section3 tr{
+    margin: 20px;
+    border-bottom: 2px solid black;
+    border-collapse: collapse;
+}
+
+
+footer{
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media only screen and (max-width: 445px) {
+    .container{
+        max-width: 95vw;
+    }
+    .section1{
+        flex-direction: row;
+    }
+    header nav{
+        flex-direction: column;
+        font-size: 14px;
+    }
+    .navbar li{
+        margin: 0 5px;
+    }
+    nav div{
+        justify-content: center;
+    }
+    .dumbell{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .top-right{
+      width: 100%;  
+    }
+    .top-left{
+        width: 100%;
+        font-size: 0.8rem;
+        margin: 0 0 36px 0;
+    }
+    .dumbellimg{
+        display: none;
+    }
+    .section2{
+        padding: 0;
+    }
+    .boxes{
+        flex-direction: column;
+    }
+    .container2{
+        margin: 0;
+    }
+}
