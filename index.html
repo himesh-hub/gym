@@ -6,6 +6,7 @@
     <title>fitness.com</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="utils.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container mx-auto ">
@@ -13,11 +14,20 @@
             <nav class="flex justify-between">
                 <div class="flex item-center font-bold text-blue">Fitness</div>
                 <ul class="navbar flex item-center">
-                    <li>Home</li>
-                    <li>about</li>
-                    <li>contact us</li>
-                    <li>services</li>
-                    <li><button class="btn">Join Now</button></li>
+                    <li onclick="showSidebar()"><i class="fa-solid fa-bars menu"></i></li>
+                    <li class="hide">Home</li>
+                    <li class="hide">About</li>
+                    <li class="hide">Contact us</li>
+                    <li class="hide">Services</li>
+                    <li class="hide"><button class="btn">Join Now</button></li>
+                </ul>
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()" class="li"><i class="fa-solid fa-circle-xmark"></i></li>
+                    <li class="li">Home</li>
+                    <li class="li">About</li>
+                    <li class="li">Contact us</li>
+                    <li class="li">Services</li>
+                    <li class="li"><button class="btn">Join Now</button></li>
                 </ul>
             </nav>
             <hr>

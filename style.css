@@ -25,6 +25,35 @@ nav div{
     margin: 0px 12px;
 }
 
+.menu{
+    display: none;
+    visibility: collapse;
+}
+
+.sidebar{
+    background-color: rgba(135, 206, 235, 0.5) ;
+    height: 100%;
+    width: 45vw;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.sidebar button{
+    background-color: white;
+    border-color: white;
+}
+
+.li{
+    padding: 10px 0 20px 15px;
+}
+
 .top-left{
     /* height: 50vh; */
     width: 50%;
@@ -145,16 +174,14 @@ footer{
     .section1{
         flex-direction: row;
     }
-    header nav{
-        flex-direction: column;
-        font-size: 14px;
+    .menu{
+    visibility: visible;
     }
-    .navbar li{
-        margin: 0 5px;
+    .hide{
+        display: none;
+        visibility: hidden;
     }
-    nav div{
-        justify-content: center;
-    }
+    
     .dumbell{
         flex-direction: column-reverse;
         align-items: center;
